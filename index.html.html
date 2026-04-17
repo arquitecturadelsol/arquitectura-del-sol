@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Arquitectura del Sol</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: white;
+        }
+
+        header {
+            background: black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 300px;
+        }
+
+        nav {
+            background: #1c1c1c;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #f1c40f;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') no-repeat center/cover;
+            text-align: center;
+            padding: 120px 20px;
+        }
+
+        .btn {
+            background: #f1c40f;
+            color: black;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .services, .gallery, .testimonials {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            background: #222;
+            margin: 10px;
+            padding: 20px;
+            width: 260px;
+            border-radius: 10px;
+            border: 1px solid #f1c40f;
+        }
+
+        .gallery img {
+            width: 300px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        .about {
+            background: #1a1a1a;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: black;
+            padding: 15px;
+        }
+
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            font-size: 20px;
+            padding: 15px;
+            border-radius: 50%;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo.png" alt="Arquitectura del Sol">
+</header>
+
+<nav>
+    <a href="#">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#galeria">Proyectos</a>
+    <a href="#testimonios">Testimonios</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<div class="hero">
+    <h1>Construimos con excelencia</h1>
+    <p>Arquitectura y construcción de alto nivel</p>
+    <a href="#contacto" class="btn">Solicitar cotización</a>
+</div>
+
+<section id="servicios">
+    <h2>Nuestros Servicios</h2>
+    <div class="services">
+        <div class="card"><h3>Construcción</h3><p>Proyectos completos.</p></div>
+        <div class="card"><h3>Remodelaciones</h3><p>Modernizamos espacios.</p></div>
+        <div class="card"><h3>Diseño</h3><p>Arquitectura profesional.</p></div>
+        <div class="card"><h3>Supervisión</h3><p>Control de obra.</p></div>
+    </div>
+</section>
+
+<!-- GALERÍA -->
+<section id="galeria">
+    <h2>Proyectos Realizados</h2>
+    <div class="gallery">
+        <img src="obra1.jpg" alt="">
+        <img src="obra2.jpg" alt="">
+        <img src="obra3.jpg" alt="">
+    </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section id="testimonios" class="about">
+    <h2>Testimonios</h2>
+    <div class="testimonials">
+
+        <div class="card">
+            <p>"Excelente trabajo, muy profesionales."</p>
+            <strong>- Cliente 1</strong>
+        </div>
+
+        <div class="card">
+            <p>"Cumplieron en tiempo y forma, recomendados."</p>
+            <strong>- Cliente 2</strong>
+        </div>
+
+        <div class="card">
+            <p>"Gran calidad en construcción."</p>
+            <strong>- Cliente 3</strong>
+        </div>
+
+    </div>
+</section>
+
+<!-- UBICACIÓN -->
+<section id="contacto">
+    <h2>Ubicación</h2>
+
+    <iframe src="https://maps.google.com/maps?q=Mexico&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+
+    <h3>Contacto</h3>
+    <p>Email: contacto@arquitecturadelsol.com</p>
+    <p>Tel: 771 105 6600</p>
+</section>
+
+<footer>
+    <p>© 2026 Arquitectura del Sol</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/527711056600?text=Hola,%20quiero%20información%20sobre%20sus%20servicios" target="_blank">
+💬
+</a>
+
+</body>
+</html>
